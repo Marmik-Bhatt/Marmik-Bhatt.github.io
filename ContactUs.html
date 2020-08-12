@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Marmiks Store</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet" />
+    <script src="script.js"></script>
+    <link href="images/MBLogoWhite.png" rel="icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img id="logo" src="images/MBLogoWhite.png" alt="Marmik Store Logo" />
+        <h2 id="StoreName">Bheezy Clothing</h2>
+      </header>
+      <!--nav bar-->
+      <aside>
+        <ul>
+          <li id="menu_1"><a href="index.html">Home</a></li>
+          <li id="menu_5"><a href="#">Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <div class="cart">
+        <img src="images/shopping.png" alt="shopping cart" />
+      </div>
+      <div id="forms">
+        <form id="form" action=" https://httpbin.org/post" method="POST" onsubmit = "return validationcheck()" ></form>
+      </div>
+      <footer>
+        <form action = "https://formspree.io/mbjzbrlo" method = "POST" onsubmit = "return isvalid()" >
+         <label for="Email">Email:</label>
+         <input type="text" id="email" name = "_replyto">
+         <input type="submit" value ="Subscribe">
+       </form>
+         <div id="logos">
+           <a href="https://www.instagram.com" target="_blank">
+             <img id="logo0" src="images/ig.png" alt="InstagramLogo" />
+           </a>
+           <img id="logo1" src="images/snapchat.png" alt="Snapchat Logo" />
+           <a href="https://www.pinterest.ca/" target="_blank">
+             <img id="logo2" src="images/pintrest.png" alt="Pintrest Logo" />
+           </a>
+         </div>
+         <p class="center">&copy; 2020 Bheezy clothing</p>
+       </footer>
+     </div>
+   </body>
+ </html>

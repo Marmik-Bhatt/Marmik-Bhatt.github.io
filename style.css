@@ -1,0 +1,268 @@
+/* Add any CSS you need to this file. */
+
+html {
+
+  background-color:  #ccc;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #ccc;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*header styles start here*/
+header {
+  background: url(images/background-header.png) center no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  box-shadow: 0px 0px 3px black;
+  text-align: center;
+}
+
+header img#logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+header h2#StoreName {
+  color: white;
+  font-family: 'Norican', serif;
+  text-align: center;
+  margin: 0;
+}
+/*nav styles start here*/
+
+
+aside {
+
+padding: 0px 30px;
+
+}
+aside ul {
+  padding-left: 0;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+ul li {
+  font-family: 'Montserrat', serif;
+  display: inline-block;
+  list-style: none;
+  color: #f5deb3;
+  padding: 10px;
+  margin: 5px 0 0;
+  background-color: #59405c;
+}
+
+ul li a {
+  color: #f5deb3;
+  text-decoration: none;
+}
+
+aside ul li:hover {
+  background-color: #87556f;
+}
+
+/*Shopping cart styles start here*/
+.cart {
+  width: 100%;
+}
+
+.cart img {
+  max-height: 40px;
+  max-width: 80px;
+  margin-top: -100px;
+  padding: 25px;
+  float: right;
+}
+
+.cart img:hover {
+  transition: all 0.2s;
+  transform: scale(1.2);
+}
+
+/*footer styles start here*/
+footer {
+  background-color: #59405c;
+  position: relative;
+  color:wheat;
+  font-family: 'Montserrat', serif;
+}
+
+
+
+.center {
+  font-family: 'Montserrat', serif;
+  text-align: center;
+  color: wheat;
+  padding: 0 0 20px;
+  margin: 0px;
+}
+
+footer div#logos {
+  text-align: center;
+}
+
+footer div#logos img {
+  padding: 10px;
+  max-height: 40px;
+}
+
+footer form {
+
+  
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/*product card styles start here*/
+#products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product {
+  box-shadow: 0 4px 8px 0 #4b5d67;
+  max-width: 300px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+}
+
+.product h4 {
+  color: #4b5d67;
+}
+
+.product .productimg {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  background: center no-repeat;
+  background-size: cover;
+}
+
+.product p {
+  min-height: 55px;
+  color: #4b5d67;
+  margin-bottom: 0;
+}
+
+.product p.price {
+  margin: 0px;
+}
+
+#products #filterby {
+  font-family: 'Montserrat', serif;
+  color: #555;
+}
+/*form styles start here*/
+footer form input[type='submit'],
+#forms #form input[type='submit'],
+.product .button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-style: 'Montserrat', serif;
+  color: wheat;
+  border-radius: 40px;
+  background-color: #87556f;
+  outline: none;
+  box-shadow: 0px 2px 8px #4b5d67;
+  transition: 0.3s;
+}
+footer form input[type='submit']:hover,
+#forms #form input[type='submit']:hover,
+.product .button:hover {
+  background-color: teal;
+}
+
+footer form input[type='submit']:active,
+#forms #form input[type='submit']:active,
+.product .button:active {
+  transform: translateY(7px);
+}
+
+#forms #form input.nicely-spaced {
+display: block;
+margin: -26px 0 0 auto;
+
+
+}
+
+#forms #form label.nicely-spaced {
+  display: block;
+  text-align: left;
+  
+  }
+  
+
+#forms #form.active {
+  box-shadow: 0 4px 8px 0 #4b5d67;
+  max-width: 260px;
+  margin: 20px auto;
+  padding: 20px 50px;
+  line-height: 24pt;
+  font-family: 'Montserrat', serif;
+  color: #4b5d67;
+  background-color: white;
+  text-align: center;
+  border-radius: 45px;
+  
+}
+
+#forms {
+
+  flex-grow:1;
+}
+
+@media (max-width: 768px) {
+
+  footer form {
+
+ position: static;
+  text-align: center;
+  padding: 20px 0 ;
+
+  }
+
+  header {
+   
+    padding-bottom: 65px;
+
+
+  }
+ 
+  aside ul {
+  
+     margin-top: -60px;
+
+  }
+  
+  .cart img {
+      
+    position: absolute;
+    top: 0px;
+    right: 0px;
+     margin-top: 0px;
+  }
+
+
+}
